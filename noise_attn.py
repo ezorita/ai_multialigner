@@ -1,11 +1,9 @@
-import numpy as np
-import pandas as pd
+import sys
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import numpy as np
 import matplotlib.pyplot as plt
-import sys
-import pdb
 
 # Local modules
 import sequence
@@ -121,7 +119,6 @@ if __name__ == "__main__":
       )
 
       epochs = 300
-      epochs = 10
       batch_size = 16
       ndel = lambda: np.random.randint(10,30)
       
